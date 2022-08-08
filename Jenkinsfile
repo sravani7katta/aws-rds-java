@@ -43,14 +43,15 @@ pipeline {
                       nexusVersion: 'nexus2',
                       protocol: 'http', repository: 'http://3.90.105.83:8081/nexus/content/repositories/Jenkins_Repo',
                       version: '1.0-SNAPSHOT'
+                ]
             }
         }
     }
 }
-                    
+    
          '
-                }
-            }
-        }
-    }
-}    
+
+            
+        
+    
+ 
