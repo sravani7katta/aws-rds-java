@@ -13,7 +13,7 @@ pipeline {
         stage('Docker Build') {
             steps {
                 script {
-                    docker.build("deepika2chebolu/aws-rds:${TAG}")
+                    docker.build("sravani7katta/aws-rds:${TAG}")
                 }
             }
         }
@@ -21,8 +21,8 @@ pipeline {
             steps {
                 script {
                     docker.withRegistry('https://registry.hub.docker.com','docker_credential') {
-                        docker.image("deepika2chebolu/aws-rds:${TAG}").push()
-                        docker.image("deepika2chebolu/aws-rds:${TAG}").push("latest")
+                        docker.image("sravani7katta/aws-rds:${TAG}").push()
+                        docker.image("sravani7katta/aws-rds:${TAG}").push("latest")
                     }
                 }
             }
