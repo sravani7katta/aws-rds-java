@@ -17,17 +17,17 @@ pipeline {
                 }
             }
         }
-        stage('Pushing Docker Image to Dockerhub') {
-            steps {
-                script {
-                    docker.withRegistry('https://registry.hub.docker.com','docker_credential') {
-                        docker.image("sravani7katta/aws-rds:${TAG}").push()
-                        docker.image("sravani7katta/aws-rds:${TAG}").push("latest")
-                    }
-                }
-            }
-        }
-    }  
+    }
+}
+        
+            
+                      
+                   
+                   
+                
+            
+        
+    
     
               
                  
