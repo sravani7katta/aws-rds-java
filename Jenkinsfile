@@ -39,9 +39,10 @@ pipeline {
                 }
                       credentialsId: 'jenkins repo',
                       groupId: 'com.javawebtutor',
-                      nexusUrl: '172.31.20.128:8080',
+                      nexusUrl: '172.31.20.128:8081',
                       nexusVersion: 'nexus2',
-                      protocol: 'http', repository: 'http://3.90.105.83:8081/nexus/content/repositories/Jenkins_Repo',
+                      protocol: 'http', 
+                      repository: 'http://3.90.105.83:8081/nexus/content/repositories/Jenkins_Repo',
                       version: '1.0-SNAPSHOT'
                  }
             
