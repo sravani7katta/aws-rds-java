@@ -18,7 +18,7 @@ pipeline {
             }
         }
        stage('Upload to Nexus')
-        steps {
+           steps {
             script {
                 nexusArtifactUploader artifacts: [[artifactId: 'LoginWebApp', classifier: '', file: 'LoginWebApp/target/LoginWebApp.war', type: 'war']], credentialsId: 'nexus', groupId: 'com.javawebtutor', nexusUrl: '34.224.66.217:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'maven-snapshots', version: '1.0-SNAPSHOT'
             }
